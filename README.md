@@ -9,7 +9,11 @@ To import the demo into the project manager:
 <br>
 <br>
 <li>
-  Clone this repository
+  Clone this repository (or
+  <a href="https://github.com/guacboy/gdquest-challenge-management-game/archive/refs/heads/main.zip">
+    download
+  </a>
+  a ZIP archive)
 </li>
 <ul>
   <ul>
