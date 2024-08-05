@@ -17,7 +17,9 @@ To import the demo into the project manager:
   </ul>
 </ul>
 <li>
-  Open Godot's project manager and click the <img scr=""> button on the top-left.
+  Open Godot's project manager and click the
+  <img src="scan_button.png" style="height: 20px">
+  button on the top-left.
 </li>
 <li>
   Select the path to the folder containing the project files.
