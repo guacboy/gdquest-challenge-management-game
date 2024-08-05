@@ -1,0 +1,100 @@
+[gd_scene load_steps=14 format=3 uid="uid://dmhos65c2k8ka"]
+
+[ext_resource type="Script" path="res://Scripts/dinosaur.gd" id="1_it82e"]
+[ext_resource type="Texture2D" uid="uid://dhlgmyli1snty" path="res://Assets/sheets/DinoSprites - doux.png" id="2_ud1ky"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0peo"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qs5w3"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44mks"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54qno"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j684o"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_20uah"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvp66"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0iu8"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(192, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6spm7"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(216, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uq4uw"]
+atlas = ExtResource("2_ud1ky")
+region = Rect2(240, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kq3o5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0peo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qs5w3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44mks")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54qno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j684o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_20uah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvp66")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0iu8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6spm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uq4uw")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[node name="DinosaurBlue" type="Node2D"]
+script = ExtResource("1_it82e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -7)
+scale = Vector2(3.75, 3.75)
+sprite_frames = SubResource("SpriteFrames_kq3o5")
+animation = &"idle"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
