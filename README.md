@@ -33,7 +33,7 @@ and voilà! Project should now appear in the project manager.
 <h2>
   License and Assets
 </h2>
-The demo is distributed under the terms of the MIT license, as described in the <a href="https://github.com/guacboy/gdquest-challenge-management-game/blob/main/LICENSE">LICENSE.md</a> file. The asset(s) used for this demo are not mine and can be found in the link(s) below:
+This demo is distributed under the terms of the MIT license, as described in the <a href="https://github.com/guacboy/gdquest-challenge-management-game/blob/main/LICENSE">LICENSE.md</a> file. The asset(s) used for this demo are not mine and can be found in the link(s) below:
 <li>
   https://arks.itch.io/dino-characters
 </li>
